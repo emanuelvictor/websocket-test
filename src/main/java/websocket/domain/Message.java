@@ -1,4 +1,4 @@
-package websocket;
+package websocket.domain;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonIgnore;
