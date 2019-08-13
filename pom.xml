@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>websocket-test</groupId>
+    <artifactId>websocket-test</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <packaging>jar</packaging>
+
+    <name>WebSocket Test</name>
+    <description>Test to Webflux WebSocket</description>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.1.5.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+
+<!--    <properties>-->
+<!--        <start-class>ehadancadoxaropexaropexaropinho.ReactiveChatApplication</start-class>-->
+<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
+<!--        <project.reporting.outputEncoding>${project.build.sourceEncoding}</project.reporting.outputEncoding>-->
+<!--        <java.version>11</java.version>-->
+<!--        <spring-cloud.version>Finchley.BUILD-SNAPSHOT</spring-cloud.version>-->
+<!--        <xml-bind.version>2.3.0</xml-bind.version>-->
+
+<!--    </properties>-->
+
+    <dependencies>
+        <!--servidor-->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-tomcat</artifactId>-->
+<!--        </dependency>-->
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <!--        <dependency>-->
+        <!--            <groupId>org.springframework.boot</groupId>-->
+        <!--            <artifactId>spring-boot-starter-websocket</artifactId>-->
+        <!--        </dependency>-->
+        <dependency>
+            <groupId>javax.websocket</groupId>
+            <artifactId>javax.websocket-api</artifactId>
+            <!--            <version>1.1</version>-->
+        </dependency>
+        <!--        <dependency>-->
+        <!--            <groupId>javax.websocket</groupId>-->
+        <!--            <artifactId>javax.websocket-api</artifactId>-->
+        <!--        </dependency>-->
+
+        <!-- Lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <!--gson-->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </dependency>
+
+<!--        &lt;!&ndash;jaxb for java 10 compat&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.sun.xml.bind</groupId>-->
+<!--            <artifactId>jaxb-core</artifactId>-->
+<!--            <version>${xml-bind.version}</version>-->
+<!--        </dependency>-->
+<!--        <dependency>-->
+<!--            <groupId>com.sun.xml.bind</groupId>-->
+<!--            <artifactId>jaxb-impl</artifactId>-->
+<!--            <version>${xml-bind.version}</version>-->
+<!--        </dependency>-->
+
+    </dependencies>
+
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;<jvmArguments>&#45;&#45;add-modules java.se &#45;&#45;add-exports java.base/jdk.internal.ref=ALL-UNNAMED &#45;&#45;add-opens java.base/java.lang=ALL-UNNAMED &#45;&#45;add-opens java.base/java.nio=ALL-UNNAMED &#45;&#45;add-opens java.base/sun.nio.ch=ALL-UNNAMED &#45;&#45;add-opens java.management/sun.management=ALL-UNNAMED &#45;&#45;add-opens jdk.management/com.sun.management.internal=ALL-UNNAMED</jvmArguments>&ndash;&gt;-->
+<!--                    <mainClass>${start-class}</mainClass>-->
+<!--                    <layout>ZIP</layout>-->
+<!--                </configuration>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>repackage</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+    <repositories>
+        <repository>
+            <id>spring-snapshots</id>
+            <name>Spring Snapshots</name>
+            <url>https://repo.spring.io/snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>spring-milestones</id>
+            <name>Spring Milestones</name>
+            <url>https://repo.spring.io/milestone</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+
+</project>
+
